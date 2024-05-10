@@ -29,7 +29,7 @@ DEF_CLI_SRC=$(toml_get "$main_config_t" cli-source) || DEF_CLI_SRC="j-hc/revance
 DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="ReVanced"
 mkdir -p $TEMP_DIR $BUILD_DIR
 
-if [ "${2-}" = "--config-update" ]; thenb
+if [ "${2-}" = "--config-update" ]; then
 	config_update
 	exit 0
 fi
